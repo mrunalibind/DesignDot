@@ -32,21 +32,21 @@ export default function Insights() {
               <div className="border-b pb-3">
                 <h3 className="text-sm font-semibold">Market Entry</h3>
                 <p className="text-xs text-gray-500">
-                  Research demand, assess competition, choose model, localize offering.
+                  Research demand, assess competition, choose model, localize offering. comply regulations, price strategically, partner locally, iterate learning.
                 </p>
               </div>
 
               <div className="border-b pb-3">
                 <h3 className="text-sm font-semibold">Operations</h3>
                 <p className="text-xs text-gray-500">
-                  Planning, organizing, and managing processes efficiently.
+                  Planning, organizing, and managing processes to efficiently produce goods or services, ensuring quality, cost-effectiveness, and customer satisfaction.
                 </p>
               </div>
 
               <div>
                 <h3 className="text-sm font-semibold">Growth & Expansion</h3>
                 <p className="text-xs text-gray-500">
-                  Increasing business size and market reach.
+                  Increasing business size, market reach, revenue, and resources to achieve long-term sustainability and competitive advantage.
                 </p>
               </div>
 
