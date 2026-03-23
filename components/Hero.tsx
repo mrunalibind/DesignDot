@@ -2,17 +2,16 @@ import React from "react";
 
 export default function Hero() {
   return (
-    <div className="w-full bg-[#00338D] text-white relative overflow-hidden min-h-[300px] lg:min-h-[250px] flex items-center pt-20 lg:pt-0">
-
+    <div className="w-full bg-[#00338D] text-white relative overflow-hidden min-h-[600px] lg:min-h-[800px] flex items-center pt-20 lg:pt-0">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-0 items-center w-full relative z-10">
-
+        
         <div className="z-20 order-2 lg:order-1">
           <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70 mb-4 font-semibold">
             Accountants and Global Business Advisors
           </p>
 
           <div className="mb-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold leading-[1.1] tracking-tight">
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight">
               EMPOWERED <br />
               <div className="inline-block">
                 WORKPLACES
@@ -27,7 +26,7 @@ export default function Hero() {
           </p>
 
           <button
-            className="bg-[#FF7300] text-black font-semibold text-sm px-6 py-3 flex items-center gap-3 w-[206px] h-[49px] rounded"
+            className="bg-[#FF7300] text-black font-semibold text-sm px-6 py-3 flex items-center gap-3 w-[206px] h-[49px] rounded transition-transform hover:scale-105"
             style={{
               clipPath: "polygon(0 0, 88% 0, 100% 100%, 0% 100%)",
             }}
@@ -44,12 +43,12 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center h-full order-1 lg:order-2 py-10 lg:py-0">
-
+        <div className="relative flex justify-center items-center h-full order-1 lg:order-2 py-2 lg:py-0">
+          
           <div
             className="relative overflow-hidden shadow-2xl transition-all duration-500 
                w-[280px] h-[350px] rounded-[60px] 
-               lg:w-[580px] lg:h-[784px] lg:rounded-[167px]"
+               lg:w-[850px] lg:h-[750px] lg:rounded-[70px] lg:-translate-x-10"
             style={{
               transform: "rotate(40.03deg)",
               backgroundColor: "#051C42",
@@ -65,20 +64,20 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-2 lg:bottom-10 right-0 lg:-right-4 flex items-center gap-3">
+          <div className="absolute bottom-4 lg:bottom-2 right-2 lg:-right-16 flex items-center gap-3">
             <div className="flex -space-x-2 lg:-space-x-3">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="w-8 h-8 lg:w-10 lg:h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden">
+                <div key={i} className="w-6 h-6 lg:w-10 lg:h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden shadow-lg">
                   <img src={`/man${i}.png`} alt="user" className="w-full h-full object-cover" />
                 </div>
               ))}
-              <div className="w-8 h-8 lg:w-10 lg:h-10 bg-[#FF7300] flex items-center justify-center rounded-full border-2 border-white text-[7px] lg:text-[8px] font-black">
+              <div className="w-6 h-6 lg:w-10 lg:h-10 bg-[#FF7300] flex items-center justify-center rounded-full border-2 border-white text-[7px] lg:text-[9px] font-black text-white shadow-lg">
                 MORE
               </div>
             </div>
-            <div>
-              <p className="font-bold text-lg lg:text-xl leading-none">250+</p>
-              <p className="text-[8px] lg:text-[9px] text-white/70 uppercase font-bold tracking-tighter">Enjoy Working<br />with us</p>
+            <div className="pr-2">
+              <p className="font-bold text-lg lg:text-2xl leading-none">250+</p>
+              <p className="text-[8px] lg:text-[10px] text-white/70 uppercase font-bold tracking-tighter">Enjoy Working<br />with us</p>
             </div>
           </div>
         </div>

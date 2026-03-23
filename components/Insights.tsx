@@ -51,7 +51,7 @@ export default function Insights() {
 
               <div className="relative w-[60%] rounded-2xl overflow-hidden">
                 <Image
-                  src="/stock.jpg"
+                  src="/stockMoney.jpg"
                   alt="main"
                   fill
                   className="object-cover"
@@ -66,7 +66,7 @@ export default function Insights() {
 
               <div className="relative w-[20%] rounded-2xl overflow-hidden">
                 <Image
-                  src="/off2.jpg"
+                  src="/heroSection.jpg"
                   alt="operations"
                   fill
                   className="object-cover"
@@ -80,7 +80,7 @@ export default function Insights() {
 
               <div className="relative w-[20%] rounded-2xl overflow-hidden">
                 <Image
-                  src="/building.png"
+                  src="/Insight3.jpg"
                   alt="growth"
                   fill
                   className="object-cover"
