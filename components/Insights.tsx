@@ -6,21 +6,19 @@ export default function Insights() {
       <div className="max-w-7xl mx-auto px-6 relative">
         <div className="flex flex-col lg:flex-row gap-40 relative">
 
-          {/* SIDE LABEL */}
           <div className="hidden lg:flex absolute left-0 top-0">
-            <div className="bg-gray-200 w-[115px] h-[115px] rounded-2xl flex items-end text-[12px] font-semibold text-black pl-3 pb-3">
+            <div className="bg-[#EEEEEE] w-[115px] h-[115px] rounded-2xl flex items-end text-[12px] font-semibold text-black pl-3 pb-3">
               INSPIRATION <br /> & INSIGHTS
             </div>
           </div>
 
-          {/* LEFT CONTENT */}
           <div className="flex-1 lg:pl-[140px]">
             <div className="space-y-6 max-w-[700px]">
-              <div className="border-b-2 border-blue-800 pb-3">
-                <h3 className="text-sm font-semibold text-blue-800">
+              <div className="border-b-2 border-[#00338D] pb-3">
+                <h3 className="text-sm font-semibold text-[#00338D]">
                   Pre-market Entry
                 </h3>
-                <p className="text-xs text-blue-800 leading-5">
+                <p className="text-xs text-[#00338D] leading-5">
                   Pre-market entry means trading securities before regular market hours...
                 </p>
               </div>
@@ -48,11 +46,9 @@ export default function Insights() {
             </div>
           </div>
 
-          {/* RIGHT IMAGES */}
           <div className="flex-1">
             <div className="flex gap-4 h-[320px] md:h-[380px]">
 
-              {/* BIG IMAGE */}
               <div className="relative w-[60%] rounded-2xl overflow-hidden">
                 <Image
                   src="/stock.jpg"
@@ -68,7 +64,6 @@ export default function Insights() {
                 </div>
               </div>
 
-              {/* SMALL IMAGE 1 */}
               <div className="relative w-[20%] rounded-2xl overflow-hidden">
                 <Image
                   src="/off2.jpg"
@@ -83,7 +78,6 @@ export default function Insights() {
                 </div>
               </div>
 
-              {/* SMALL IMAGE 2 */}
               <div className="relative w-[20%] rounded-2xl overflow-hidden">
                 <Image
                   src="/building.png"

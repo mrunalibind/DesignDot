@@ -8,31 +8,26 @@ const topics = [
   "India Modernizes Maritime Law with Carriage of Goods by Sea Bill, 2025"
 ];
 
-export default function  HotTopics () {
+export default function HotTopics() {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6">
 
         <div className="flex flex-col lg:flex-row gap-10">
 
-          {/* 🔶 IMAGE LABEL WITH TEXT */}
-          <div className="relative flex-shrink-0 w-[200px] h-[60px]">
-            <Image
-              src="/topic.png"
-              alt="Hot Topics"
-              fill
-              className="object-contain"
-            />
+          <div className="relative flex-shrink-0">
 
-            {/* TEXT OVER IMAGE */}
-            <div className="absolute inset-0 flex items-center justify-start">
-              <span className="text-black text-xs font-semibold tracking-wide pl-4">
-                HOT TOPICS
-              </span>
-            </div>
+            <button
+              className="bg-[#FF7300] text-black font-semibold text-sm px-6 py-3 flex items-center gap-3 w-[206px] h-[49px] rounded"
+              style={{
+                clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
+              }}
+            >
+              <span className="text-lg">→</span>
+              HOT TOPICS
+            </button>
           </div>
 
-          {/* 🔥 TOPICS */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 w-full">
 
             {topics.map((item, index) => (
@@ -44,7 +39,6 @@ export default function  HotTopics () {
                   {item}
                 </p>
 
-                {/* ARROW */}
                 <div className="mt-8 flex justify-end">
                   <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">
                     →

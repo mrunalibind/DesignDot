@@ -12,7 +12,6 @@ export default function Navbar() {
     <nav className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
 
-        {/* LOGO */}
         <div className="flex items-center">
           <Image
             src="/logo.png"
@@ -23,7 +22,6 @@ export default function Navbar() {
           />
         </div>
 
-        {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wide">
           <li className="cursor-pointer hover:text-blue-600">WHO WE SERVE</li>
           <li className="cursor-pointer hover:text-blue-600">SOLUTIONS</li>
@@ -32,25 +30,20 @@ export default function Navbar() {
           <li className="cursor-pointer hover:text-blue-600">CONTACT US</li>
         </ul>
 
-        {/* RIGHT SECTION (VISIBLE ALWAYS) */}
         <div className="flex items-center gap-3 sm:gap-4 md:gap-6 text-xs font-semibold">
 
-          {/* SEARCH */}
           <Search size={18} className="cursor-pointer" />
 
-          {/* COUNTRY */}
           <div className="hidden sm:flex items-center gap-1 cursor-pointer">
             <span>IND</span>
             <IoMdArrowDropdown size={18}/>
           </div>
 
-          {/* LANGUAGE */}
           <div className="hidden sm:flex items-center gap-1 cursor-pointer">
             <span>ENGLISH</span>
             <IoMdArrowDropdown size={18}/>
           </div>
 
-          {/* MOBILE MENU BUTTON */}
           <button
             className="md:hidden ml-2"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -60,7 +53,6 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* MOBILE MENU */}
       {isMenuOpen && (
         <div className="md:hidden px-4 pb-4 space-y-4 text-sm font-medium bg-white border-t">
 
@@ -70,7 +62,6 @@ export default function Navbar() {
           <p className="py-2 border-b">ABOUT US</p>
           <p className="py-2 border-b">CONTACT US</p>
 
-          {/* SHOW DROPDOWNS INSIDE MENU FOR SMALL SCREENS */}
           <div className="pt-2 flex justify-between text-xs">
             <span>IND</span>
             <span>ENGLISH</span>
