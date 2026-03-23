@@ -8,7 +8,7 @@ export default function About() {
         {/* FLEX CONTAINER */}
         <div className="flex flex-col lg:flex-row gap-40 relative">
 
-          {/* LEFT LABEL (VISIBLE ONLY ON LARGE) */}
+          
           <div className="hidden lg:flex absolute left-0 top-0">
             <div className="bg-gray-200 w-[115px] h-[115px] pl-3 pb-3 rounded-2xl flex items-end text-[12px] font-bold text-black text-center">
               ABOUT<br />FIRM

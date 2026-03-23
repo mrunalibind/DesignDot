@@ -2,15 +2,17 @@
 
 import { useState } from "react";
 import { Menu, X, ChevronDown, Search } from "lucide-react";
+import { IoMdArrowDropdown } from "react-icons/io";
 import Image from "next/image";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="w-full bg-white font">
+    <nav className="w-full bg-white">
       <div className="max-w-7xl mx-auto px-4 md:px-8 h-16 flex items-center justify-between">
 
+        {/* LOGO */}
         <div className="flex items-center">
           <Image
             src="/logo.png"
@@ -21,6 +23,7 @@ export default function Navbar() {
           />
         </div>
 
+        {/* DESKTOP MENU */}
         <ul className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wide">
           <li className="cursor-pointer hover:text-blue-600">WHO WE SERVE</li>
           <li className="cursor-pointer hover:text-blue-600">SOLUTIONS</li>
@@ -29,29 +32,32 @@ export default function Navbar() {
           <li className="cursor-pointer hover:text-blue-600">CONTACT US</li>
         </ul>
 
-        <div className="hidden md:flex items-center gap-6 text-xs font-semibold">
+        {/* RIGHT SECTION (VISIBLE ALWAYS) */}
+        <div className="flex items-center gap-3 sm:gap-4 md:gap-6 text-xs font-semibold">
 
+          {/* SEARCH */}
           <Search size={18} className="cursor-pointer" />
 
-          <div className="flex items-center gap-1 cursor-pointer">
+          {/* COUNTRY */}
+          <div className="hidden sm:flex items-center gap-1 cursor-pointer">
             <span>IND</span>
-            <ChevronDown size={14} />
+            <IoMdArrowDropdown size={18}/>
           </div>
 
-          <div className="flex items-center gap-1 cursor-pointer">
+          {/* LANGUAGE */}
+          <div className="hidden sm:flex items-center gap-1 cursor-pointer">
             <span>ENGLISH</span>
-            <ChevronDown size={14} />
+            <IoMdArrowDropdown size={18}/>
           </div>
 
+          {/* MOBILE MENU BUTTON */}
+          <button
+            className="md:hidden ml-2"
+            onClick={() => setIsMenuOpen(!isMenuOpen)}
+          >
+            {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+          </button>
         </div>
-
-        {/* MOBILE BUTTON */}
-        <button
-          className="md:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
-        >
-          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
-        </button>
       </div>
 
       {/* MOBILE MENU */}
@@ -64,7 +70,8 @@ export default function Navbar() {
           <p className="py-2 border-b">ABOUT US</p>
           <p className="py-2 border-b">CONTACT US</p>
 
-          <div className="pt-2 flex justify-between">
+          {/* SHOW DROPDOWNS INSIDE MENU FOR SMALL SCREENS */}
+          <div className="pt-2 flex justify-between text-xs">
             <span>IND</span>
             <span>ENGLISH</span>
           </div>
@@ -72,4 +79,4 @@ export default function Navbar() {
       )}
     </nav>
   );
-};
+}
