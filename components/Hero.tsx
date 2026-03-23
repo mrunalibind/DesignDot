@@ -14,7 +14,9 @@ export default function Hero() {
 
           <h1 className="text-4xl md:text-5xl font-bold leading-tight mb-6">
             EMPOWERED <br /> WORKPLACES
+            <div className="w-[350px] h-[2px] bg-white"></div>
           </h1>
+          
 
           <p className="text-gray-200 mb-8 max-w-md">
             by fostering inclusivity, encouraging growth, promoting collaboration,
