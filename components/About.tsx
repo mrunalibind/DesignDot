@@ -5,10 +5,10 @@ export default function About() {
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 relative">
 
-        <div className="flex flex-col lg:flex-row gap-40 relative">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-40 relative">
 
 
-          <div className="hidden lg:flex absolute left-0 top-0 z-10">
+          <div className="flex lg:absolute left-0 top-0 z-10">
             <div className="bg-[#EEEEEE] w-[115px] h-[115px] pl-3 pb-3 rounded-2xl flex items-end text-[12px] font-bold text-black text-center">
               ABOUT<br />FIRM
             </div>

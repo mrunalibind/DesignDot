@@ -4,9 +4,9 @@ export default function Insights() {
   return (
     <section className="w-full bg-white py-16">
       <div className="max-w-7xl mx-auto px-6 relative">
-        <div className="flex flex-col lg:flex-row gap-40 relative">
+        <div className="flex flex-col lg:flex-row gap-10 lg:gap-40 relative">
 
-          <div className="hidden lg:flex absolute left-0 top-0">
+          <div className="flex lg:absolute left-0 top-0">
             <div className="bg-[#EEEEEE] w-[115px] h-[115px] rounded-2xl flex items-end text-[12px] font-semibold text-black pl-3 pb-3">
               INSPIRATION <br /> & INSIGHTS
             </div>
@@ -59,7 +59,7 @@ export default function Insights() {
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-sm font-bold">Pre-Market</h3>
                   <p className="text-xs max-w-[220px]">
-                    Evaluating Supply Chain Readiness Before Committing Capital in Emerging Markets 
+                    Evaluating Supply Chain Readiness Before Committing Capital in Emerging Markets
                   </p>
                 </div>
               </div>
