@@ -17,7 +17,7 @@ export default function HotTopics() {
           
           <div className="relative flex-shrink-0">
             <button
-              className="bg-[#FF7300] text-black font-semibold text-sm px-6 py-3 flex items-center gap-3 w-[206px] h-[49px] rounded"
+              className="bg-[#FF7300] text-black font-semibold text-sm px-6 py-3 flex items-center gap-3 w-[206px] h-[49px] rounded transition-transform active:scale-95"
               style={{
                 clipPath: "polygon(0 0, 85% 0, 100% 100%, 0% 100%)",
               }}
@@ -31,24 +31,23 @@ export default function HotTopics() {
             {topics.map((item, index) => (
               <div
                 key={index}
-                className="group relative flex flex-col justify-between h-full pt-4 pb-2 cursor-pointer transition-all duration-300"
+                className="group relative flex flex-col justify-between h-full pt-4 pb-4 cursor-pointer transition-all duration-300 select-none"
               >
-
-                <div className="absolute top-0 left-0 w-full h-[2px] bg-[#00338D]" />
+                <div className="absolute top-0 left-0 w-full h-[1px] bg-gray-200" />
 
                 <div className="relative z-10">
-                  <p className="text-sm text-gray-700 leading-6 transition-colors duration-300 group-hover:text-black">
+                  <p className="text-sm text-gray-700 leading-6 transition-colors duration-300 group-hover:text-black group-active:text-black">
                     {item}
                   </p>
                 </div>
 
                 <div className="mt-8 flex justify-end">
-                  <span className="text-xl transition-transform duration-300 group-hover:translate-x-2">
+                  <span className="text-xl transition-transform duration-300 group-hover:translate-x-2 group-active:translate-x-2">
                     →
                   </span>
                 </div>
 
-                <div className="absolute bottom-0 left-1/2 w-0 h-[2px] bg-[#00338D] transition-all duration-500 ease-in-out group-hover:w-full group-hover:left-0" />
+                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-[#00338D] scale-x-0 transition-transform duration-100 ease-in-out group-hover:scale-x-100 group-active:scale-x-100 origin-center" />
               </div>
             ))}
           </div>
