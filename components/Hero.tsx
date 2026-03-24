@@ -1,17 +1,31 @@
-import React from "react";
+"use client";
+import React, { useState, useEffect } from "react";
 
 export default function Hero() {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
     <div className="w-full bg-[#00338D] text-white relative overflow-hidden min-h-[600px] lg:min-h-[800px] flex items-center pt-20 lg:pt-0">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-0 items-center w-full relative z-10">
         
-        <div className="z-20 order-2 lg:order-1">
+        <div className="z-20 order-2 lg:order-1 w-full">
           <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70 mb-4 font-semibold">
             Accountants and Global Business Advisors
           </p>
 
-          <div className="mb-6">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight">
+          <div 
+            className="mb-6 transition-opacity duration-1000 ease-out"
+            style={{ 
+              opacity: isVisible ? 1 : 0,
+              transform: isVisible ? 'translateY(0)' : 'translateY(10px)',
+              transitionProperty: 'opacity, transform'
+            }}
+          >
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight w-full">
               EMPOWERED <br />
               <div className="inline-block">
                 WORKPLACES
@@ -20,7 +34,7 @@ export default function Hero() {
             </h1>
           </div>
 
-          <p className="text-white/80 mb-10 max-w-md text-sm md:text-base font-light leading-relaxed">
+          <p className="text-white/80 mb-10 text-sm md:text-base font-light leading-relaxed w-full max-w-none lg:max-w-md">
             by fostering inclusivity, encouraging growth, promoting collaboration,
             valuing diversity, supporting innovation, and building trust for shared success.
           </p>
@@ -35,19 +49,19 @@ export default function Hero() {
             LETS CONNECT
           </button>
 
-          <div className="mt-16 lg:mt-24">
-            <p className="text-[9px] md:text-[10px] text-white/60 font-bold tracking-[0.2em] uppercase leading-relaxed max-w-md">
+          <div className="mt-16 pb-6 lg:mt-24">
+            <p className="text-[9px] md:text-[10px] text-white/60 font-bold tracking-[0.2em] uppercase leading-relaxed w-full max-w-none lg:max-w-md">
               ACCOUNTING, TAXATION, & BUSINESS ADVISORY <br className="hidden md:block" />
               BETWEEN INDIA, JAPAN, AND THE WORLD
             </p>
           </div>
         </div>
 
-        <div className="relative flex justify-center items-center h-full order-1 lg:order-2 py-2 lg:py-0">
-          
+        <div className="relative flex justify-center items-center h-full order-1 lg:order-2 py-10 lg:py-0">
           <div
             className="relative overflow-hidden shadow-2xl transition-all duration-500 
-               w-[280px] h-[350px] rounded-[60px] 
+               w-[300px] h-[380px] rounded-[60px] 
+               md:w-[450px] md:h-[500px]
                lg:w-[850px] lg:h-[750px] lg:rounded-[70px] lg:-translate-x-10"
             style={{
               transform: "rotate(40.03deg)",
@@ -64,7 +78,7 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute bottom-4 lg:bottom-2 right-2 lg:-right-16 flex items-center gap-3">
+          <div className="absolute bottom-12 lg:bottom-2 right-4 lg:-right-16 flex items-center gap-3 bg-[#00338D]/80 lg:bg-transparent p-2 rounded-lg lg:p-0 backdrop-blur-sm lg:backdrop-blur-none">
             <div className="flex -space-x-2 lg:-space-x-3">
               {[1, 2, 3].map((i) => (
                 <div key={i} className="w-6 h-6 lg:w-10 lg:h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden shadow-lg">

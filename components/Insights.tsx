@@ -1,3 +1,6 @@
+"use client";
+
+import React from "react";
 import Image from "next/image";
 
 export default function Insights() {
@@ -13,7 +16,8 @@ export default function Insights() {
           </div>
 
           <div className="flex-1 lg:pl-[140px]">
-            <div className="space-y-6 max-w-[700px]">
+            {/* FIX: Removed max-w-[700px] on mobile/tablet to take full width */}
+            <div className="space-y-6 w-full max-w-none lg:max-w-[700px]">
               <div className="border-b-2 border-[#00338D] pb-3">
                 <h3 className="text-sm font-semibold text-[#00338D]">
                   Pre-market Entry
@@ -46,16 +50,17 @@ export default function Insights() {
             </div>
           </div>
 
-          <div className="flex-1">
+          <div className="flex-1 w-full">
             <div className="flex gap-4 h-[320px] md:h-[380px]">
 
-              <div className="relative w-[60%] rounded-2xl overflow-hidden">
+              <div className="relative w-[60%] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
                 <Image
                   src="/stockMoney.jpg"
                   alt="main"
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-sm font-bold">Pre-Market</h3>
                   <p className="text-xs max-w-[220px]">
@@ -64,29 +69,31 @@ export default function Insights() {
                 </div>
               </div>
 
-              <div className="relative w-[20%] rounded-2xl overflow-hidden">
+              <div className="relative w-[20%] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
                 <Image
                   src="/heroSection.jpg"
                   alt="operations"
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-end justify-center pb-[40px]">
-                  <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide">
+                  <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide whitespace-nowrap">
                     Operations
                   </span>
                 </div>
               </div>
 
-              <div className="relative w-[20%] rounded-2xl overflow-hidden">
+              <div className="relative w-[20%] rounded-2xl overflow-hidden cursor-pointer transition-all duration-300 ease-in-out hover:-translate-y-1 hover:shadow-2xl">
                 <Image
                   src="/Insight3.jpg"
                   alt="growth"
                   fill
                   className="object-cover"
                 />
+                <div className="absolute inset-0 bg-black/20 hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-end justify-center pb-[40px]">
-                  <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide">
+                  <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide whitespace-nowrap">
                     Growth & Expansion
                   </span>
                 </div>
