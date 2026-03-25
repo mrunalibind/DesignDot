@@ -49,7 +49,7 @@ export default function About() {
                 alt="map"
                 width={900}
                 height={500}
-                className="object-contain opacity-50"
+                className="object-contain"
               />
             </div>
 

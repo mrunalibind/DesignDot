@@ -13,7 +13,7 @@ export default function Hero() {
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-0 items-center w-full relative z-10">
         
         <div className="z-20 mt-[100px] order-2 lg:order-1 w-full">
-          <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70 mb-4 font-semibold">
+          <p className="text-[10px] md:text-[9px] uppercase tracking-[0.2em] text-[#B8B3B3] mb-4 font-semibold">
             Accountants and Global Business Advisors
           </p>
 
@@ -25,7 +25,7 @@ export default function Hero() {
               transitionProperty: 'opacity, transform'
             }}
           >
-            <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight w-full">
+            <h1 className="text-3xl md:text-5xl lg:text-5xl font-semibold leading-[1.1] tracking-tight w-full">
               EMPOWERED <br />
               <div className="inline-block">
                 WORKPLACES
@@ -34,9 +34,9 @@ export default function Hero() {
             </h1>
           </div>
 
-          <p className="text-white/80 mb-10 text-sm md:text-base font-light leading-relaxed w-full max-w-none lg:max-w-md">
+          <p className="text-[#FFFFFF] mb-10 text-sm md:text-base font-light leading-relaxed w-full max-w-none lg:max-w-md">
             by fostering inclusivity, encouraging growth, promoting collaboration,
-            valuing diversity, supporting innovation, and building trust for shared success.
+            valuing diversity, supporting innovation, and building trust for shared success
           </p>
 
           <button
@@ -49,9 +49,9 @@ export default function Hero() {
             LETS CONNECT
           </button>
 
-          <div className="mt-16 lg:mt-15">
+          <div className="mt-16 mb-6 lg:mt-15">
             <p className="text-[9px] md:text-[10px] text-[#FFFFFF] font-bold tracking-[0.2em] uppercase leading-relaxed w-full max-w-none lg:w-full">
-              ACCOUNTING, TAXATION, & BUSINESS ADVISORY <br className="hidden md:block" />
+              ACCOUNTING, TAXATION, & BUSINESS ADVISORY
               BETWEEN INDIA, JAPAN, AND THE WORLD
             </p>
           </div>
@@ -63,7 +63,7 @@ export default function Hero() {
                w-[300px] h-[380px] rounded-[60px] 
                md:w-[450px] md:h-[500px]
                lg:absolute lg:w-[800px] lg:h-[750px] lg:rounded-[100px] 
-               lg:-top-65 lg:-right-30 lg:translate-x-0"
+               lg:-top-70 lg:-right-30 lg:translate-x-0"
             style={{
               transform: "rotate(50.03deg)",
               backgroundColor: "#051C42",

@@ -59,7 +59,7 @@ export default function Insights() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute bottom-4 left-4 text-white">
                   <h3 className="text-sm font-bold">Pre-Market</h3>
                   <p className="text-xs max-w-[220px]">
@@ -75,7 +75,7 @@ export default function Insights() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-end justify-center pb-[40px]">
                   <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide whitespace-nowrap">
                     Operations
@@ -90,7 +90,7 @@ export default function Insights() {
                   fill
                   className="object-cover"
                 />
-                <div className="absolute inset-0 bg-black/30 group-hover:bg-black/10 transition-colors duration-300" />
+                <div className="absolute inset-0 bg-black/50 group-hover:bg-black/10 transition-colors duration-300" />
                 <div className="absolute inset-0 flex items-end justify-center pb-[65px]">
                   <span className="text-white font-bold text-xs rotate-[-90deg] tracking-wide whitespace-nowrap">
                     Growth & Expansion
