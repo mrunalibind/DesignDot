@@ -33,7 +33,7 @@ export default function HotTopics() {
                 key={index}
                 className="group relative flex flex-col justify-between h-full pt-4 pb-4 cursor-pointer transition-all duration-300 select-none"
               >
-                <div className="absolute top-0 left-0 w-full h-[1px] bg-gray-200" />
+                <div className="absolute top-0 left-0 w-full h-[1.5px] bg-[#00338D]" />
 
                 <div className="relative z-10">
                   <p className="text-sm text-gray-700 leading-6 transition-colors duration-300 group-hover:text-black group-active:text-black">
@@ -42,7 +42,7 @@ export default function HotTopics() {
                 </div>
 
                 <div className="mt-8 flex justify-end">
-                  <span className="text-xl transition-transform duration-300 group-hover:translate-x-2 group-active:translate-x-2">
+                  <span className="text-3xl transition-transform duration-300 group-hover:translate-x-2 group-active:translate-x-2">
                     →
                   </span>
                 </div>

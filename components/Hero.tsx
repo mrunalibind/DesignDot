@@ -9,10 +9,10 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className="w-full bg-[#00338D] text-white relative overflow-hidden min-h-[600px] lg:min-h-[800px] flex items-center pt-20 lg:pt-0">
+    <div className="w-full bg-[#00338D] text-white relative overflow-hidden min-h-[600px] lg:min-h-[680px] flex items-center pt-20 lg:pt-0">
       <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-10 lg:gap-0 items-center w-full relative z-10">
         
-        <div className="z-20 order-2 lg:order-1 w-full">
+        <div className="z-20 mt-[100px] order-2 lg:order-1 w-full">
           <p className="text-[10px] md:text-xs uppercase tracking-[0.2em] text-white/70 mb-4 font-semibold">
             Accountants and Global Business Advisors
           </p>
@@ -25,7 +25,7 @@ export default function Hero() {
               transitionProperty: 'opacity, transform'
             }}
           >
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-semibold leading-[1.1] tracking-tight w-full">
+            <h1 className="text-3xl md:text-5xl lg:text-6xl font-semibold leading-[1.1] tracking-tight w-full">
               EMPOWERED <br />
               <div className="inline-block">
                 WORKPLACES
@@ -49,8 +49,8 @@ export default function Hero() {
             LETS CONNECT
           </button>
 
-          <div className="mt-16 pb-6 lg:mt-24">
-            <p className="text-[9px] md:text-[10px] text-white/60 font-bold tracking-[0.2em] uppercase leading-relaxed w-full max-w-none lg:max-w-md">
+          <div className="mt-16 lg:mt-15">
+            <p className="text-[9px] md:text-[10px] text-[#FFFFFF] font-bold tracking-[0.2em] uppercase leading-relaxed w-full max-w-none lg:w-full">
               ACCOUNTING, TAXATION, & BUSINESS ADVISORY <br className="hidden md:block" />
               BETWEEN INDIA, JAPAN, AND THE WORLD
             </p>
@@ -62,30 +62,33 @@ export default function Hero() {
             className="relative overflow-hidden shadow-2xl transition-all duration-500 
                w-[300px] h-[380px] rounded-[60px] 
                md:w-[450px] md:h-[500px]
-               lg:w-[850px] lg:h-[750px] lg:rounded-[70px] lg:-translate-x-10"
+               lg:absolute lg:w-[800px] lg:h-[750px] lg:rounded-[100px] 
+               lg:-top-65 lg:-right-30 lg:translate-x-0"
             style={{
-              transform: "rotate(40.03deg)",
+              transform: "rotate(50.03deg)",
               backgroundColor: "#051C42",
             }}
           >
             <img
               src="/heroSection.jpg"
               alt="Office View"
-              className="w-full h-full object-cover scale-[1.8] lg:scale-150"
+              className="w-[900px] h-[850px] object-cover scale-[1.5] lg:scale-[1.2]"
               style={{
-                transform: "rotate(-40.03deg)",
+                transform: "rotate(-50.03deg)",
+                objectPosition: "center",
               }}
             />
           </div>
 
-          <div className="absolute bottom-12 lg:bottom-2 right-4 lg:-right-16 flex items-center gap-3 bg-[#00338D]/80 lg:bg-transparent p-2 rounded-lg lg:p-0 backdrop-blur-sm lg:backdrop-blur-none">
+          
+          <div className="absolute bottom-12 lg:-bottom-20 right-4 lg:top-[495] lg:right-[-95] flex items-center gap-3">
             <div className="flex -space-x-2 lg:-space-x-3">
               {[1, 2, 3].map((i) => (
-                <div key={i} className="w-6 h-6 lg:w-10 lg:h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden shadow-lg">
+                <div key={i} className="w-6 h-6 lg:w-10 lg:h-10 rounded-full border-2 border-white bg-gray-400 overflow-hidden">
                   <img src={`/man${i}.png`} alt="user" className="w-full h-full object-cover" />
                 </div>
               ))}
-              <div className="w-6 h-6 lg:w-10 lg:h-10 bg-[#FF7300] flex items-center justify-center rounded-full border-2 border-white text-[7px] lg:text-[9px] font-black text-white shadow-lg">
+              <div className="w-6 h-6 lg:w-10 lg:h-10 bg-[#FF7300] flex items-center justify-center rounded-full border-2 border-white text-[7px] lg:text-[9px] font-black text-white">
                 MORE
               </div>
             </div>

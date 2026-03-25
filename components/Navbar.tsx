@@ -22,12 +22,12 @@ export default function Navbar() {
           />
         </div>
 
-        <ul className="hidden md:flex items-center gap-8 text-xs font-semibold tracking-wide">
-          <li className="cursor-pointer hover:text-blue-600">WHO WE SERVE</li>
-          <li className="cursor-pointer hover:text-blue-600">SOLUTIONS</li>
-          <li className="cursor-pointer hover:text-blue-600">RESOURCES</li>
-          <li className="cursor-pointer hover:text-blue-600">ABOUT US</li>
-          <li className="cursor-pointer hover:text-blue-600">CONTACT US</li>
+        <ul className="hidden md:flex items-center ml-auto pr-18 gap-6 text-xs font-semibold tracking-wide">
+          <li className="cursor-pointer hover:text-blue-600 whitespace-nowrap">WHO WE SERVE</li>
+          <li className="cursor-pointer hover:text-blue-600 whitespace-nowrap">SOLUTIONS</li>
+          <li className="cursor-pointer hover:text-blue-600 whitespace-nowrap">RESOURCES</li>
+          <li className="cursor-pointer hover:text-blue-600 whitespace-nowrap">ABOUT US</li>
+          <li className="cursor-pointer hover:text-blue-600 whitespace-nowrap">CONTACT US</li>
         </ul>
 
         <div className="flex items-center gap-3 sm:gap-4 md:gap-6 text-xs font-semibold">
